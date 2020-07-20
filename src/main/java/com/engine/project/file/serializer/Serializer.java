@@ -1,4 +1,8 @@
 package com.engine.project.file.serializer;
 
-public class Serializer {
+public abstract class Serializer {
+
+    public abstract String serialize(Object object);
+    public abstract <T> T deserialize(Class<? extends T> type, String serializedObject);
+
 }

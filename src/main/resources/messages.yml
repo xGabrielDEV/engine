@@ -1,0 +1,7 @@
+general:
+  no-permission: "&c&lERRO &fVocê não tem permissão para executar este comando!"
+  not-enough-args: "&c&lERRO &fVocê precisa inserir mais argumentos!"
+
+alert:
+  title: "&c&lMyServer"
+  subtitle-color: "f"

@@ -1,17 +1,18 @@
 package com.engine.project.modules;
 
+import com.engine.project.Engine;
+import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
 
 public interface Module {
 
     @NotNull
-    String getName();
+    String getId();
 
-    ModuleExecutor getExecutor();
+    void init(JavaPlugin plugin);
 
-    void setEnabled(@NotNull Boolean enabled);
-
-    @NotNull
-    Boolean isEnabled();
+    default boolean isEnabled() {
+        return Engine.getInstance().getConfig().getBoolean("modules." + getId() + ".enabled");
+    }
 
 }

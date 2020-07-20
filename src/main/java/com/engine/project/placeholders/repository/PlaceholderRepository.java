@@ -1,7 +1,7 @@
 package com.engine.project.placeholders.repository;
 
 import com.engine.project.placeholders.Placeholder;
-import com.engine.project.utils.Repository;
+import com.engine.project.utils.models.Repository;
 import com.google.common.collect.Maps;
 import org.jetbrains.annotations.NotNull;
 

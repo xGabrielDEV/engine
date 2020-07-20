@@ -2,9 +2,10 @@ package com.engine.project.integration.repository;
 
 import com.engine.project.integration.Integration;
 import com.engine.project.integration.IntegrationType;
-import com.engine.project.utils.Repository;
+import com.engine.project.utils.models.Repository;
 import com.google.common.collect.Maps;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Map;
 
@@ -28,6 +29,7 @@ public final class IntegrationRepository implements Repository<IntegrationType, 
     }
 
     @Override
+    @Nullable
     public Integration retrieve(@NotNull IntegrationType identifier) {
         return integrations.get(identifier);
     }

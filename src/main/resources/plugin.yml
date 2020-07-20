@@ -1,0 +1,7 @@
+name: "Engine"
+version: "1.0.0"
+main: "com.engine.project.Engine"
+commands:
+  alert:
+    description: "Envie um alerta a todo o servidor!"
+    usage: "/alert Hello World!"

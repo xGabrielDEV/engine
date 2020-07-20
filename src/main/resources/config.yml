@@ -1,1 +1,9 @@
-# Hello World!
+modules:
+  gravity:
+    name: "Gravity"
+    enabled: false
+  auto-messages:
+    name: "Auto Messages"
+    enabled: true
+    messages:
+      - 'Hello World!'

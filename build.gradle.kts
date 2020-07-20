@@ -18,6 +18,9 @@ dependencies {
 
     compileOnly("com.destroystokyo.paper:paper-api:1.12.2-R0.1-SNAPSHOT")
     compileOnly("com.github.azbh111:craftbukkit-1.8.8:R")
+
+    testCompileOnly("com.destroystokyo.paper:paper-api:1.12.2-R0.1-SNAPSHOT")
+    testCompileOnly("com.github.azbh111:craftbukkit-1.8.8:R")
 }
 
 tasks {

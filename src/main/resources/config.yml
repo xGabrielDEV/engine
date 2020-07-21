@@ -4,4 +4,6 @@ modules:
   auto-messages:
     enabled: true
     messages:
-      - 'Hello World!'
+      - '&4&l[ANÚNCIO] &fAtualmente temos &b{online}&f pessoas no servidor!'
+      - '&4&l[ANÚNCIO] &fObrigado por jogar em meu servidor, &b{name}&f!'
+    delay: 30

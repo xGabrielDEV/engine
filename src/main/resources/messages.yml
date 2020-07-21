@@ -1,7 +1,10 @@
 general:
   no-permission: "&c&lERRO &fVocê não tem permissão para executar este comando!"
   not-enough-args: "&c&lERRO &fVocê precisa inserir mais argumentos!"
+  alert-sent: "&a&lSUCESSO &fVocê enviou um alerta para {online}!"
+  wrong-sender: "&c&lERRO &fApenas jogadores de verdade podem executar este comando!"
+  chest-opened: "&a&lSUCESSO &fVocê abriu seu enderchest com sucesso!"
 
 alert:
   title: "&c&lMyServer"
-  subtitle-color: "f"
+  subtitle-prefix: "・"

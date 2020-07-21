@@ -7,18 +7,18 @@ import org.jetbrains.annotations.Nullable;
 
 public class PlaceholderContext {
 
-    @Nullable
+    @NotNull
     private final Player player;
 
     @NotNull
     private String text;
 
-    public PlaceholderContext(@Nullable Player player, @NotNull String text) {
+    public PlaceholderContext(@NotNull Player player, @NotNull String text) {
         this.player = player;
         this.text = text;
     }
 
-    @Nullable
+    @NotNull
     public Player getPlayer() {
         return player;
     }

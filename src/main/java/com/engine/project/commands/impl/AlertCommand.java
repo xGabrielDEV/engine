@@ -15,20 +15,13 @@ public class AlertCommand extends Command {
     @me.saiintbrisson.minecraft.command.annotations.Command(
             name = "alert",
             aliases = { "alerta" },
-            permission = "no-permission"
+            permission = "engine.commands.alert"
     )
     public boolean command(Execution execution) {
-        if (!execution.getSender().hasPermission("engine.commands.alert")) {
-            execution.getSender().sendMessage(getManager().getEntry("no-permission", execution));
-            return false;
-        }
-
         if (execution.getArgs().length == 0) {
             execution.getSender().sendMessage(getManager().getEntry("general.not-enough-args", execution));
             return false;
         }
-
-        execution.getSender().sendMessage();
         new Title(
                 getManager().getEntry("alert.title", execution),
                 getManager().getEntry("alert.subtitle-prefix", execution) + " " + String.join(" ", execution.getArgs())

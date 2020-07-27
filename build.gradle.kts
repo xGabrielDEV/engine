@@ -17,7 +17,7 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    implementation("com.github.SaiintBrisson:command-framework:-SNAPSHOT")
+    implementation("com.github.SaiintBrisson.command-framework:bukkit:-SNAPSHOT")
 
     compileOnly("com.destroystokyo.paper:paper-api:1.12.2-R0.1-SNAPSHOT")
     compileOnly("com.github.azbh111:craftbukkit-1.8.8:R")
